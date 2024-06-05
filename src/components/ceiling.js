@@ -40,7 +40,7 @@ export const createCeiling = (scene, textureLoader) => {
     THREE.RepeatWrapping;
 
   const ceilingGeometry = new THREE.PlaneGeometry(45, 40);
-  const ceilingMaterial = new THREE.MeshLambertMaterial({
+  const ceilingMaterial = new THREE.MeshStandardMaterial({
     map: colorTexture,
     displacementMap: displacementTexture,
     aoMap: aoTexture,
